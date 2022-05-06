@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3a55b24780.js" crossorigin="anonymous"></script>
+    <title>LUCAS DEV | Full-Stack Developer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header> 
+            <div id="cabecalho">
+                <div><img src="./img/logo.svg" alt="logo" width="150"></div>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars fa-2x"></i>
+                </label>
+                <ul>
+                    <li>
+                        <a target="_blank" href="https://github.com/kioopol"> <i class="fa fa-github fa-2x"></i> GitHub </a> |
+                    </li>
+                    <li>
+                        <a target="_blank" href="mailto:lucassilv321234@gmail.com"> <i class="fa-solid fa-envelope fa-2x"></i> E-mail </a> |
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://wa.me/5598985391411"> <i class="fa fa-whatsapp fa-2x"></i> Whatsapp </a> |
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://linkedin.com/lucasdev20"> <i class="fa fa-linkedin fa-2x"></i> Linkedin</a>
+                    </li>
+                </ul>
+            </div>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <div id="avatar-section">
+                    <img src="./img/avatar.svg" alt="">
+                </div>
+                <div id="name-section">
+                    <div>
+                        <h1 class="textPrimary">LUCAS DEV</h1>
+                        <h5 class="textSecondary"> Student Full-Stack Developer</h5>
+                        <div class="form">
+                            <form>
+                                <h3>Deixe seu email de contato!</h3>
+                                <input type="text" placeholder="Seu melhor email:">
+                                <button><i class="fa fa-send"> Enviar</i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="arrow">
+                <h2>Saber mais!</h2>
+                <i id="animation-icon" class="fa-solid fa-circle-down fa-2x" onclick="displayAbout()"></i>
+            </div>
+
+            <div id="about" style="display: none;">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In mollitia dignissimos, exercitationem obcaecati assumenda ad similique expedita eum odio explicabo nesciunt cumque reprehenderit est. Quos dignissimos corrupti repellat nam possimus.</p>
+            </div> 
+        </section>
+    </main>
+    <script src="./scripts.js"></script>
+</body>
+</html>

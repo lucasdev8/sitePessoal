@@ -1,0 +1,276 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+    color: #ffffff;
+}
+
+body {
+    background: linear-gradient(90deg, rgba(12,6,128,1) 10%, rgba(24,38,187,1) 70%, rgba(59,61,200,1) 100%);
+}
+
+header {
+    padding: 15px;
+    border-bottom: 15px ridge #ffffff;
+}
+
+#cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#cabecalho #check {
+    display: none;
+}
+
+#cabecalho .checkbtn {
+    display: none;
+}
+
+#cabecalho ul {
+    display: flex;
+    list-style: none;
+}
+
+#cabecalho ul li a {
+    margin: 10px;
+    text-decoration: none;
+}
+
+#cabecalho ul li a:hover {
+    color: rgb(91, 94, 91);
+    transition: 700ms;
+}
+
+.container .textPrimary {
+    padding: 20px;
+    margin: 0 auto;
+    width: 350px;
+    animation: digitandoPrimary 1.5s steps(25), blink .4s infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid
+}
+
+.container .textSecondary {
+    padding: 20px;
+    margin: 0 auto;
+    width: 450px;
+    animation: digitandoSecondary 1.5s steps(25), blink .4s infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid
+}
+
+@keyframes digitandoPrimary{
+    from {
+        width: 0;
+    }
+}
+
+@keyframes digitandoSecondary{
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    40% {
+        border-color: black;
+    }
+}
+
+.container {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.container .name {
+    margin-top: 75px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@media (max-width: 451px) {
+    #cabecalho .checkbtn {
+        display: initial;
+    }
+    .container .textPrimary {
+        padding: 20px;
+        margin: 0 auto;
+        font-size: 50px !important;
+        width: 300px;
+        animation: digitandoPrimary 1.5s steps(25), blink .4s infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 2px solid
+    }
+    
+    .container .textSecondary {
+        padding: 20px;
+        margin: 0 auto;
+        font-size: 13px !important;
+        width: 240px;
+        animation: digitandoSecondary 1.5s steps(25), blink .4s infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 2px solid
+    }
+
+    .container .name #name-section .form {
+        width: auto;
+    }
+}
+
+@media (max-width: 1000px) {
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .container .name {
+        display: initial;
+    }
+
+    .container .name #avatar-section {
+        width: 100%;
+    }
+
+    .container .name #avatar-section img {
+        width: 300px;
+    }
+
+    header #cabecalho ul {
+        display: none;
+    }
+
+    #cabecalho .checkbtn {
+        display: block;
+    }
+}
+
+@-webkit-keyframes up-down {
+    0% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  @keyframes up-down {
+    0% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+
+.container .name #avatar-section {
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+.container .name h1 {
+    font-size: 60px;
+}
+
+.container .name h5 {
+    font-size: 25px;
+}
+
+.container #arrow i {
+    margin: 10px;
+}
+
+.container #about p {
+    display: block;
+}
+
+.container #about p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form {
+    width: 390px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.form input {
+    width: 70%;
+    margin-top: 50px;
+}
+
+.form button {
+    width: 15%;
+}
+
+.form input {
+    border-radius: 20px;
+    border: none;
+    padding: 15px;
+    height: 20px;
+    color: #000;
+}
+
+@keyframes materia-anim {
+    0%, 25% {
+            box-shadow: 0 0 0px 0px blue;
+       }
+    50% {
+            box-shadow: 0 0 0px 5px rgba(4, 243, 144, 0.5);
+       }
+
+   75%, 100% {
+            box-shadow: 0 0 0px 10px rgba(10, 170, 233, 0);
+       }
+}
+
+#arrow i {
+    cursor: pointer;
+    border-radius: 50%;
+    animation: materia-anim infinite 2.5s linear
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+#animation-icon {
+    transition: 700ms;
+}
+
+.active-text-about {
+    display: block !important;
+}
+
+.form button {
+    border-radius: 20px;
+    border: none;
+    height: 30px;
+    font-size: 13px;
+    width: 25%;
+    background-color: rgb(9, 164, 9);
+    cursor: pointer;
+    font-weight: 600;
+    animation: materia-anim infinite 2.5s linear;
+}
+
+.form button:hover {
+    background-color: #0ce66e;
+    transition: 700ms;
+}
+
+.form button:active{
+    border-radius: 20px;
+    border: none;
+    height: 27px;
+    background-color: rgb(80, 231, 85);
+    transition: 700ms;
+}
